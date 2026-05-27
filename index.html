@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="IBI eCommerce Manager Tools - a central dashboard for India Business International staff tools.">
+    <title>IBI eCommerce Manager Tools</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="top-controls">
+        <p class="version-badge" aria-label="Application version">
+          <span class="version-label">Version</span>
+          <strong id="app-version">v1.0</strong>
+        </p>
+
+        <label class="theme-toggle" for="theme-switch">
+          <span class="theme-text">Dark mode</span>
+          <input id="theme-switch" class="theme-checkbox" type="checkbox" role="switch" aria-label="Use dark theme">
+          <span class="toggle-track" aria-hidden="true">
+            <span class="toggle-thumb"></span>
+          </span>
+        </label>
+      </div>
+
+      <div class="brand-section">
+        <img class="company-logo" src="assets/ibi-company-logo.svg" alt="IBI - India Business International">
+        <div class="brand-copy">
+          <p class="eyebrow">India Business International</p>
+          <h1>IBI eCommerce Manager Tools</h1>
+          <p class="subtitle">One secure workspace for daily eCommerce operations</p>
+        </div>
+      </div>
+
+      <section class="clock-card" aria-label="Current Indian date and time">
+        <span class="clock-label">India Standard Time</span>
+        <p class="clock-time" id="current-time" aria-live="off">--:--:--</p>
+        <p class="clock-date" id="current-date">Loading date...</p>
+      </section>
+    </header>
+
+    <main class="main-content">
+      <section class="tools-section" aria-labelledby="tools-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Quick Access</p>
+            <h2 id="tools-title">Useful Tools</h2>
+          </div>
+          <p class="tools-count">9 staff tools available</p>
+        </div>
+
+        <div class="tools-grid">
+          <a class="tool-card" href="https://staff.indiabusinessinternational.online" target="_blank" rel="noopener noreferrer">
+            <span class="tool-number">01</span>
+            <span class="tool-icon" aria-hidden="true">AT</span>
+            <span class="tool-content">
+              <span class="tool-name">IBI Staff Attendance</span>
+              <span class="tool-description">Mark and review attendance</span>
+            </span>
+            <span class="launch-icon" aria-hidden="true">&nearr;</span>
+          </a>
+
+          <a class="tool-card" href="https://messenger.indiabusinessinternational.online" target="_blank" rel="noopener noreferrer">
+            <span class="tool-number">02</span>
+            <span class="tool-icon" aria-hidden="true">MS</span>
+            <span class="tool-content">
+              <span class="tool-name">IBI Messenger</span>
+              <span class="tool-description">Team communication workspace</span>
+            </span>
+            <span class="launch-icon" aria-hidden="true">&nearr;</span>
+          </a>
+
+          <a class="tool-card" href="https://dimensions.indiabusinessinternational.online" target="_blank" rel="noopener noreferrer">
+            <span class="tool-number">03</span>
+            <span class="tool-icon" aria-hidden="true">DL</span>
+            <span class="tool-content">
+              <span class="tool-name">IBI Dimensions Logger</span>
+              <span class="tool-description">Record product measurements</span>
+            </span>
+            <span class="launch-icon" aria-hidden="true">&nearr;</span>
+          </a>
+
+          <a class="tool-card" href="https://listings.indiabusinessinternational.online" target="_blank" rel="noopener noreferrer">
+            <span class="tool-number">04</span>
+            <span class="tool-icon" aria-hidden="true">LG</span>
+            <span class="tool-content">
+              <span class="tool-name">IBI Listings Generator</span>
+              <span class="tool-description">Create product listings</span>
+            </span>
+            <span class="launch-icon" aria-hidden="true">&nearr;</span>
+          </a>
+
+          <a class="tool-card" href="https://orders.indiabusinessinternational.online" target="_blank" rel="noopener noreferrer">
+            <span class="tool-number">05</span>
+            <span class="tool-icon" aria-hidden="true">OP</span>
+            <span class="tool-content">
+              <span class="tool-name">IBI Order Processing</span>
+              <span class="tool-description">Process and track orders</span>
+            </span>
+            <span class="launch-icon" aria-hidden="true">&nearr;</span>
+          </a>
+
+          <a class="tool-card" href="https://returns.indiabusinessinternational.online" target="_blank" rel="noopener noreferrer">
+            <span class="tool-number">06</span>
+            <span class="tool-icon" aria-hidden="true">RL</span>
+            <span class="tool-content">
+              <span class="tool-name">IBI Returns Logger</span>
+              <span class="tool-description">Register product returns</span>
+            </span>
+            <span class="launch-icon" aria-hidden="true">&nearr;</span>
+          </a>
+
+          <a class="tool-card" href="https://invoice.indiabusinessinternational.online" target="_blank" rel="noopener noreferrer">
+            <span class="tool-number">07</span>
+            <span class="tool-icon" aria-hidden="true">IL</span>
+            <span class="tool-content">
+              <span class="tool-name">IBI Invoice &amp; Label Separator</span>
+              <span class="tool-description">Prepare shipping documents</span>
+            </span>
+            <span class="launch-icon" aria-hidden="true">&nearr;</span>
+          </a>
+
+          <a class="tool-card" href="https://renamer.indiabusinessinternational.online" target="_blank" rel="noopener noreferrer">
+            <span class="tool-number">08</span>
+            <span class="tool-icon" aria-hidden="true">PR</span>
+            <span class="tool-content">
+              <span class="tool-name">IBI PDF File Re-Namer</span>
+              <span class="tool-description">Standardize document names</span>
+            </span>
+            <span class="launch-icon" aria-hidden="true">&nearr;</span>
+          </a>
+
+          <a class="tool-card" href="https://pickup.indiabusinessinternational.online" target="_blank" rel="noopener noreferrer">
+            <span class="tool-number">09</span>
+            <span class="tool-icon" aria-hidden="true">PM</span>
+            <span class="tool-content">
+              <span class="tool-name">IBI Pickup Request Manager</span>
+              <span class="tool-description">Coordinate pickup requests</span>
+            </span>
+            <span class="launch-icon" aria-hidden="true">&nearr;</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="copyright-year"></span> India Business International. Internal staff portal.</p>
+    </footer>
+  </body>
+</html>

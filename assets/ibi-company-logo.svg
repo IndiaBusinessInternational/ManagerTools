@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="logoTitle logoDescription">
+  <title id="logoTitle">IBI</title>
+  <desc id="logoDescription">India Business International brand mark</desc>
+  <rect width="180" height="180" rx="35" fill="#000000"/>
+  <rect x="8" y="8" width="164" height="164" rx="29" fill="none" stroke="#00c5ff" stroke-width="3"/>
+  <path fill="#00c5ff" opacity=".33" d="M27 45h126v3H27zM27 132h126v3H27z"/>
+  <text x="90" y="110" fill="#00c5ff" font-family="Roboto, Arial, sans-serif" font-size="58" font-weight="900" text-anchor="middle">IBI</text>
+  <text x="90" y="129" fill="#ffffff" font-family="Roboto, Arial, sans-serif" font-size="8.7" font-weight="700" letter-spacing="2.1" text-anchor="middle">ECOMMERCE</text>
+</svg>
